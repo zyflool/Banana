@@ -41,8 +41,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                android:contentDescription="@drawable/取消"
-                android:src="@drawable/取消"
+                android:contentDescription="@drawable/cancel"
+                android:src="@drawable/cancel"
                 android:visibility="invisible" />
 
         </LinearLayout>
