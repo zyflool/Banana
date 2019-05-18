@@ -3,6 +3,7 @@ package com.example.banana.Game;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -43,6 +44,15 @@ public class Game extends AppCompatActivity implements View.OnClickListener{
         t[2][1].setOnClickListener(this);
         t[2][2].setOnClickListener(this);
         nextStep();
+    }
+
+    private void test () {
+        for (int i = 0 ; i < 3 ; i++ ) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(s[i][j] + "  ");
+            }
+            System.out.println();
+        }
     }
 
     private void nextStep() {
@@ -148,8 +158,10 @@ public class Game extends AppCompatActivity implements View.OnClickListener{
         switch (v.getId()) {
             case R.id.tab1: {
                 if ( isEmpty(1) ) {
+                    Log.e("click::::::","1,1");
                     t[0][0].setImageResource(R.drawable.circle);
                     s[0][0] = 1;
+                    test();
                     if ( ifWin() ) {
                         Toast.makeText(Game.this,"您赢了",Toast.LENGTH_SHORT).show();
                         SetIntent();
@@ -163,8 +175,10 @@ public class Game extends AppCompatActivity implements View.OnClickListener{
             }
             case R.id.tab2: {
                 if ( isEmpty(2) ) {
+                    Log.e("click::::::","1,2");
                     t[0][1].setImageResource(R.drawable.circle);
                     s[0][1] = 1;
+                    test();
                     if ( ifWin() ) {
                         Toast.makeText(Game.this,"您赢了",Toast.LENGTH_SHORT).show();
                         SetIntent();
@@ -178,8 +192,10 @@ public class Game extends AppCompatActivity implements View.OnClickListener{
             }
             case R.id.tab3: {
                 if ( isEmpty(3) ) {
+                    Log.e("click::::::","1,3");
                     t[0][2].setImageResource(R.drawable.circle);
                     s[0][2] = 1;
+                    test();
                     if ( ifWin() ) {
                         Toast.makeText(Game.this,"您赢了",Toast.LENGTH_SHORT).show();
                         SetIntent();
@@ -193,8 +209,10 @@ public class Game extends AppCompatActivity implements View.OnClickListener{
             }
             case R.id.tab4: {
                 if ( isEmpty(4) ) {
+                    Log.e("click::::::","2,1");
                     t[1][0].setImageResource(R.drawable.circle);
                     s[1][0] = 1;
+                    test();
                     if (ifWin()){
                         Toast.makeText(Game.this,"您赢了",Toast.LENGTH_SHORT).show();
                         SetIntent();
@@ -208,8 +226,10 @@ public class Game extends AppCompatActivity implements View.OnClickListener{
             }
             case R.id.tab5: {
                 if ( isEmpty(5) ) {
+                    Log.e("click::::::","2,2");
                     t[1][1].setImageResource(R.drawable.circle);
                     s[1][1] = 1;
+                    test();
                     if (ifWin()){
                         Toast.makeText(Game.this,"您赢了",Toast.LENGTH_SHORT).show();
                         SetIntent();
@@ -223,8 +243,10 @@ public class Game extends AppCompatActivity implements View.OnClickListener{
             }
             case R.id.tab6: {
                 if ( isEmpty(6) ) {
+                    Log.e("click::::::","2,3");
                     t[1][2].setImageResource(R.drawable.circle);
                     s[1][2] = 1;
+                    test();
                     if (ifWin()){
                         Toast.makeText(Game.this,"您赢了",Toast.LENGTH_SHORT).show();
                         SetIntent();
@@ -238,8 +260,10 @@ public class Game extends AppCompatActivity implements View.OnClickListener{
             }
             case R.id.tab7: {
                 if ( isEmpty(7) ) {
+                    Log.e("click::::::","3,1");
                     t[2][0].setImageResource(R.drawable.circle);
                     s[2][0] = 1;
+                    test();
                     if (ifWin()){
                         Toast.makeText(Game.this,"您赢了",Toast.LENGTH_SHORT).show();
                         SetIntent();
@@ -253,8 +277,9 @@ public class Game extends AppCompatActivity implements View.OnClickListener{
             }
             case R.id.tab8: {
                 if ( isEmpty(8) ) {
+                    Log.e("click::::::","3,2");
                     t[2][1].setImageResource(R.drawable.circle);
-                    s[2][1] = 1;
+                    s[2][1] = 1;test();
                     if (ifWin()){
                         Toast.makeText(Game.this,"您赢了",Toast.LENGTH_SHORT).show();
                         SetIntent();
@@ -268,8 +293,10 @@ public class Game extends AppCompatActivity implements View.OnClickListener{
             }
             case R.id.tab9: {
                 if ( isEmpty(9) ) {
+                    Log.e("click::::::","3,3");
                     t[2][2].setImageResource(R.drawable.circle);
                     s[2][2] = 1;
+                    test();
                     if (ifWin()){
                         Toast.makeText(Game.this,"您赢了",Toast.LENGTH_SHORT).show();
                         SetIntent();

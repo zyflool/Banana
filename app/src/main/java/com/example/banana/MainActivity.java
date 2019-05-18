@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.example.banana.Dictionary.XHDictionary;
+import com.example.banana.Dictionary.XHSearch;
 import com.example.banana.Translation.Translate;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
             case R.id.Totranslate : {
-                Intent intent = new Intent(MainActivity.this, XHDictionary.class);
+                Intent intent = new Intent(MainActivity.this, XHSearch.class);
                 startActivity(intent);
                 break;
             }

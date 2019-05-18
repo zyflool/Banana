@@ -1,62 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="80dp"
-    android:layout_width="match_parent">
+    android:padding="80dp">
 
     <TableRow>
+
         <ImageView
             android:id="@+id/tab1"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/text_border"/>
+            android:background="@drawable/text_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp" />
+
         <ImageView
             android:id="@+id/tab2"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/text_border"/>
+            android:background="@drawable/text_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp" />
+
         <ImageView
             android:id="@+id/tab3"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/text_border"/>
+            android:background="@drawable/text_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp" />
     </TableRow>
 
     <TableRow>
+
         <ImageView
             android:id="@+id/tab4"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/text_border"/>
+            android:background="@drawable/text_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp" />
+
         <ImageView
             android:id="@+id/tab5"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/text_border"/>
+            android:background="@drawable/text_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp" />
+
         <ImageView
             android:id="@+id/tab6"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/text_border"/>
+            android:background="@drawable/text_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp" />
     </TableRow>
 
     <TableRow>
+
         <ImageView
             android:id="@+id/tab7"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/text_border"/>
+            android:background="@drawable/text_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp" />
+
         <ImageView
             android:id="@+id/tab8"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/text_border"/>
+            android:background="@drawable/text_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp" />
+
         <ImageView
             android:id="@+id/tab9"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@drawable/text_border"/>
+            android:background="@drawable/text_border"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp" />
     </TableRow>
 
 </TableLayout>
