@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Translation.Translate" />
+        <activity android:name=".Translation.Translate"
+            android:theme="@style/mAppTheme"/>
         <activity android:name=".MainActivity"/>
         <activity android:name=".Dictionary.XHSearch"/>
         <activity android:name=".splash.Splash"/>

@@ -26,12 +26,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.Todictionary : {
-                Intent intent = new Intent(MainActivity.this, Translate.class);
+                Intent intent = new Intent(MainActivity.this, XHSearch.class);
                 startActivity(intent);
                 break;
             }
             case R.id.Totranslate : {
-                Intent intent = new Intent(MainActivity.this, XHSearch.class);
+                Intent intent = new Intent(MainActivity.this, Translate.class);
                 startActivity(intent);
                 break;
             }
