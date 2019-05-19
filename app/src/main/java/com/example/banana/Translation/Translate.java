@@ -10,8 +10,16 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.banana.R;
+import com.example.banana.network.Bean.TranslateBean;
+import com.example.banana.network.RetrofitWrapper;
+import com.example.banana.network.Service.TranslateService;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class Translate extends AppCompatActivity implements View.OnClickListener{
@@ -94,6 +102,21 @@ public class Translate extends AppCompatActivity implements View.OnClickListener
     }
 
     private void request (String mfrom) {
+        TranslateService translateService = RetrofitWrapper.getInstance().create(TranslateService.class);
+        Call<TranslateBean> call = translateService.translate(mfrom,fromId,toId);
+        call.enqueue(new Callback<TranslateBean>() {
+            @Override
+            public void onResponse(Call<TranslateBean> call, Response<TranslateBean> response) {
+                if ( response.isSuccessful() ) {
 
+                } else
+                    Toast.makeText(Translate.this,"加载失败，请重试", Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onFailure(Call<TranslateBean> call, Throwable t) {
+                Toast.makeText(Translate.this,"请检查网络连接", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }

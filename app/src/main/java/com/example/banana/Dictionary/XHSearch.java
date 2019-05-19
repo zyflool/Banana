@@ -59,6 +59,7 @@ public class XHSearch extends Activity implements OnClickListener {
         tvHistory = (TextView) findViewById(R.id.tv_history);
         lvHistory = (CustomerListView) findViewById(R.id.lv_history);
         btnClearHistory = (Button) findViewById(R.id.btn_clear_history);
+        ivDeleteSearch =(ImageView)findViewById(R.id.iv_delete_search);
     }
 
     private void initData() {

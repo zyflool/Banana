@@ -10,17 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Game.Game">
+        </activity>
+        <activity android:name=".Translation.Translate"
+            android:theme="@style/mAppTheme"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".Dictionary.XHSearch"/>
+        <activity android:name=".splash.Splash"
+            android:theme="@style/mAppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Translation.Translate"
-            android:theme="@style/mAppTheme"/>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".Dictionary.XHSearch"/>
-        <activity android:name=".splash.Splash"/>
     </application>
 
 </manifest>

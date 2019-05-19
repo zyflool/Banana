@@ -6,20 +6,23 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.view.animation.LinearInterpolator;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.example.banana.Game.Game;
 import com.example.banana.MainActivity;
 import com.example.banana.R;
 
 public class Splash extends AppCompatActivity {
 
-    private RelativeLayout rlSplash;
+    private LinearLayout rlSplash;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        rlSplash = (RelativeLayout) findViewById(R.id.rl_splash);
+        rlSplash = findViewById(R.id.rl_splash);
 
         startAnim();
     }
@@ -29,9 +32,9 @@ public class Splash extends AppCompatActivity {
      */
     private void startAnim() {
         // 渐变动画,从完全透明到完全不透明
-        AlphaAnimation alpha = new AlphaAnimation(0, 1);
+        AlphaAnimation alpha = new AlphaAnimation(0, 2);
         // 持续时间 2 秒
-        alpha.setDuration(2000);
+        alpha.setDuration(5000);
         // 动画结束后，保持动画状态
         alpha.setFillAfter(true);
 
@@ -63,7 +66,7 @@ public class Splash extends AppCompatActivity {
      * 跳转到下一个页面
      */
     private void jumpNextPage() {
-        startActivity(new Intent(Splash.this, MainActivity.class));
+        startActivity(new Intent(Splash.this, Game.class));
         finish();
     }
 }

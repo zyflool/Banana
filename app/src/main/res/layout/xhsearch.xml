@@ -28,7 +28,7 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:drawablePadding="10dp"
-                android:hint="请输入商户名、地点"
+                android:hint="请输入中文词汇"
                 android:singleLine="true"
                 android:textColor="#696969"
                 android:textColorHint="#bbbaba"
